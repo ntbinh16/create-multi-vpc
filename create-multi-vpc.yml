@@ -667,22 +667,22 @@ Resources:
 
 Outputs:
   # VPC A Outputs
-  VpcA:
+  VPCA:
     Description: "The Created VPC"
     Value: !Ref VpcA
     Export:
       Name: !Sub "VPCA-${AWS::StackName}-VPC"
-  VpcAPublicServerPublicIp:
+  VPCAPublicServerPublicIp:
     Description: "VPC A Public EC2 Public IP address"
     Value: !GetAtt VpcAPublicServerEc2.PublicIp
     Export:
       Name: !Sub "VPCA-${AWS::StackName}-PublicServerPublicIP"
-  VpcAPublicServerPrivateIp:
+  VPCAPublicServerPrivateIp:
     Description: "VPC A Public EC2 Private IP address"
     Value: !GetAtt VpcAPublicServerEc2.PrivateIp
     Export:
       Name: !Sub "VPCA-${AWS::StackName}-PublicServerPrivateIP"
-  VpcAPrivateServer:
+  VPCAPrivateServer:
     Description: "VPC A Private EC2 IP address"
     Value: !GetAtt ServerEc2VPCB.PrivateIp
     Export:
