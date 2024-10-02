@@ -199,10 +199,6 @@ Resources:
           CidrIp: 10.0.0.0/8
           FromPort: "-1"
           ToPort: "-1"
-        - IpProtocol: icmp
-          CidrIp: 172.16.0.0/16
-          FromPort: "-1"
-          ToPort: "-1"
 
   VpcAPublicServerEc2:
     Type: AWS::EC2::Instance
@@ -432,10 +428,6 @@ Resources:
           CidrIp: 10.0.0.0/8
           FromPort: "-1"
           ToPort: "-1"
-        - IpProtocol: icmp
-          CidrIp: 172.16.0.0/16
-          FromPort: "-1"
-          ToPort: "-1"
 
   ServerEc2VPCB:
     Type: AWS::EC2::Instance
@@ -642,10 +634,6 @@ Resources:
       SecurityGroupIngress:
         - IpProtocol: icmp
           CidrIp: 10.0.0.0/8
-          FromPort: "-1"
-          ToPort: "-1"
-        - IpProtocol: icmp
-          CidrIp: 172.16.0.0/16
           FromPort: "-1"
           ToPort: "-1"
 
